@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/laipeng668/immortalwrt.git
+  REPO_URL: https://github.com/VIKINGYFY/immortalwrt.git
   REPO_BRANCH: openwrt-24.10
   CONFIG_FILE: AX6-IPQ/.config
   DIY_SH: AX6-IPQ/diy.sh

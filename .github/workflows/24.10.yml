@@ -1,4 +1,4 @@
-name: Build OpenWRT for AX6-NSS
+name: 24.10
 
 on:
   workflow_dispatch:

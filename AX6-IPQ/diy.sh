@@ -48,7 +48,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 
 
 #修改默认IP
-sed -i 's/192.168.1.1/192.168.1.100/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.1.100/g' package/base-files/files/bin/config_generate
 
 #修改主机名
 sed -i "s/hostname='ImmortalWrt'/hostname='Redmi-AX6'/g" package/base-files/files/bin/config_generate

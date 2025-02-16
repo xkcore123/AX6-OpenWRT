@@ -69,7 +69,7 @@
   "tcp_fast_open": true,
   "udp_fragment": true,
   "udp_timeout": "5m",
-  "users": [{"name": "", "uuid": "", "alterId": 0}],
+  "users": [{"name": "2898329c-c10b-4490-b2a6-2841ab6f3152", "uuid": "2898329c-c10b-4490-b2a6-2841ab6f3152", "alterId": 0}],
   "tls": {"enabled": false},
   "transport": {"type": "ws", "headers": {"Host": "api.mobile.youku.com"}}
   },

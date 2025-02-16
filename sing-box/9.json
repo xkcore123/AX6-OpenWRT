@@ -29,12 +29,12 @@
      {"tag": "dns_proxy", "address": "tls://8.8.8.8", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"},
      {"tag": "block", "address": "rcode://success"}
    ],
-   ],
    "rules": 
    [
      {"outbound": "any", "server": "dns_direct", "disable_cache": true},
      {"clash_mode": "Direct", "server": "dns_direct"},
      {"clash_mode": "Global", "server": "dns_proxy"},
+     {"query_type": ["HTTPS", "SVCB"], "server": "block"},
      {"domain_suffix": [".cn"], "server": "dns_direct"},
      {"rule_set": ["geosite-geolocation-cn", "geosite-private"], "server": "dns_direct"},
      {"type": "logical", "mode": "and", "rules": [{"rule_set": "geosite-geolocation-!cn", "invert": true}, {"rule_set": "geoip-cn"}],"server": "dns_proxy","client_subnet": "218.104.111.114"},

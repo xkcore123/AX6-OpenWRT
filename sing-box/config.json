@@ -68,18 +68,7 @@
     "udp_fragment": true,
     "set_system_proxy": false
   },
-  {
-  "type": "vmess",
-  "tag": "vmess-in",
-  "listen": "::",
-  "listen_port": 9448,
-  "tcp_fast_open": true,
-  "udp_fragment": true,
-  "udp_timeout": "5m",
-  "users": [{"name": "", "uuid": "", "alterId": 0}],
-  "tls": {"enabled": false},
-  "transport": {"type": "ws", "headers": {"Host": "api.mobile.youku.com"}}
-  },
+
   {
     "type": "tproxy",
     "tag": "tproxy-in",

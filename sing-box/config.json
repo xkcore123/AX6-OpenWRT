@@ -126,7 +126,7 @@
      {"clash_mode": "global", "outbound": "GLOBAL"},
      {"rule_set": ["geosite-category-ads-all"], "action": "reject", "method": "default", "no_drop": false},
      {"type": "logical", "mode": "or", "rules": [{"port": 853}, {"network": "udp", "port": 443}, {"protocol": "stun"}], "action": "reject", "method": "default", "no_drop": false},
-     //{"domain": [""], "action": "route-options", "override_address": "127.0.0.1", "override_port": 8081},
+   #{"domain": [""], "action": "route-options", "override_address": "127.0.0.1", "override_port": 8081},
      {"domain": ["mirrors.vsean.net", "rebang.today"], "domain_keyword": ["bilibili", "tailscale", "parsec"], "outbound": "🎯 全球直连"},
      {"ip_cidr": ["3.0.148.218", "2406:da18:2c5:aa11:1c65:c559:ff54:833f", "141.147.189.211", "2603:c021:8010:9bfe:2ae8:7d32:1eb1:1aa3"], "outbound": "🎯 全球直连"},
      {"process_name": ["lucky", "tailscaled"], "outbound": "🎯 全球直连"},

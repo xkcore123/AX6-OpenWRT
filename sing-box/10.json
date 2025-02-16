@@ -47,10 +47,39 @@
 
 "inbounds": [
   {
+    "type": "direct",
+    "tag": "dns-in",
+    "listen": "::",
+    "listen_port": 53
+  },
+  {
+    "type": "mixed",
+    "tag": "mixed-in",
+    "listen": "::",
+    "listen_port": 8081,
+    "tcp_fast_open": true,
+    "udp_fragment": true,
+    "set_system_proxy": false
+  },
+  {
+  "type": "vmess",
+  "tag": "vmess-in",
+  "listen": "::",
+  "listen_port": 9448,
+  "tcp_fast_open": true,
+  "udp_fragment": true,
+  "udp_timeout": "5m",
+  "users": [{"name": "", "uuid": "", "alterId": 0}],
+  "tls": {"enabled": false},
+  "transport": {"type": "ws", "headers": {"Host": "api.mobile.youku.com"}}
+  },
+  {
     "type": "tproxy",
     "tag": "tproxy-in",
-    "listen": "0.0.0.0",
-    "listen_port": 7895
+    "listen": "::",
+    "listen_port": 12345,
+    "tcp_fast_open": true,
+    "udp_fragment": true,
   }
 ],
 
